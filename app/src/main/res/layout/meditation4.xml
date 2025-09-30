@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Mindful moments"
+        android:textColor="#3A5BBC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Иконка профиля -->
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_profile"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="-40dp" />
+
+    <!-- Обложка -->
+    <ImageView
+        android:id="@+id/imgCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/deep_relax"
+        android:scaleType="centerCrop" />
+
+    <!-- Блок информации -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок и кнопка избранного -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deep relax"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/btnFavorite4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <!-- Подзаголовок -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner • Guided Meditation"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Описание -->
+        <TextView
+            android:id="@+id/tvDescriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This 10-minute guided meditation will help you release tension and find deep relaxation. Perfect for beginners, this session focuses on breathing techniques and body awareness to calm your mind and body."
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Кнопки -->
+        <Button
+            android:id="@+id/btnAddFavorites4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add to favorites"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1E88E5"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnDownload4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download for offline"
+            android:textAllCaps="false"
+            android:textColor="#1E88E5"
+            android:backgroundTint="#FFFFFF"
+
+            android:strokeColor="#1E88E5" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
